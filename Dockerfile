@@ -1,6 +1,7 @@
 FROM debian:jessie
 
 RUN apt-get update \
+ && apt-get upgrade -y \
  && apt-get install -y --no-install-recommends \
     curl perl make build-essential procps \
     libreadline-dev libncurses5-dev libpcre3-dev libssl-dev \
